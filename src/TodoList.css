@@ -1,0 +1,132 @@
+
+/* General styling for body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container for the app */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;  /* Adjust the width for a centered container */
+    margin: 20px auto;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+/* Styling for the input field */
+.searchE {
+    height: 40px;
+    width: 100%;
+    max-width: 100%;   /* Makes sure it stays within the container */
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    color: #333;
+    background-color: #edf4fb;
+    padding: 0 20px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;    /* Adds margin but centers it within the container */
+    box-sizing: border-box; /* Prevents the padding from causing overflow */
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.searchE:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+/* Styling for buttons */
+.buttonAll, .buttonAll1 {
+    background-color: #4e8bb7;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttonAll:hover, .buttonAll1:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* To-do list container */
+.TodoList {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* List items */
+li {
+    list-style-type: none;
+    padding: 10px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* Checked-off list item */
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Style for unordered list */
+#ulist {
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for text inside the list */
+#list {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .box {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .searchE, .TodoList {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .buttonAll, .buttonAll1 {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
